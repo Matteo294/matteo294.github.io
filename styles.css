@@ -84,9 +84,13 @@ main {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.content-container {
-    display: flex;
-    align-items: center;
+.image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 20%;
 }
 
 .text {
@@ -98,6 +102,12 @@ main {
 
 .maincontent{
     padding: 30px 15% 30px 15%;
+}
+
+.socials_bar {
+    width:50%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 main ul {
@@ -121,6 +131,13 @@ main ul li:before {
 
 main h2 {
     margin-top: 20px
+}
+
+main h3 {
+    text-align: center;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 100px;
 }
 
 main img {
