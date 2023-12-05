@@ -16,6 +16,33 @@ header {
     padding: 10px;
 }
 
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        text-align: center;
+    }
+    nav li {
+        display: block;
+        margin: 10px 0;
+    }
+    main {
+        max-width: 100%; /* Adjusted for smaller screens */
+        margin: 10px; /* Adjusted margin for smaller screens */
+    }
+    .content-container {
+        flex-direction: column; /* Stack content vertically on smaller screens */
+    }
+    .text {
+        padding: 20px 10px; /* Adjusted padding for smaller screens */
+    }
+}
+
 nav {
     background-color: #444;
     padding: 10px 0;
@@ -30,7 +57,7 @@ nav ul {
 
 nav li {
     display: inline-block;
-    margin-right: 0 10px;
+    margin-right: 10px;
 }
 
 nav li:last-child {
@@ -49,7 +76,7 @@ nav a:hover {
 }
 
 main {
-    max-width: 800px;
+    max-width: 1200px;
     margin: 30px auto;
     padding: 20px;
     background-color: #fff;
@@ -69,6 +96,33 @@ main {
     text-align: center;
 }
 
+.maincontent{
+    padding: 30px 15% 30px 15%;
+}
+
+main ul {
+    list-style: none;
+    padding: 10px 0 0px 20px;
+}
+
+main ul li {
+    position:relative;
+    padding: 10px 0;
+}
+
+main ul li:before {
+    content: "\2022"; /* Unicode character for a black filled dot */
+    color: #000; /* Black color */
+    display: inline-block;
+    font-size:2.0em;
+    margin-right: 0.5em; /* Adjusted margin for spacing between dot and text */
+    vertical-align: middle;
+}
+
+main h2 {
+    margin-top: 20px
+}
+
 main img {
     max-width: 100%;
     height: auto;
@@ -77,20 +131,6 @@ main img {
     border-radius: 10px;
 }
 
+.
 
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px;
-}
 
-@media (max-width: 768px) {
-    nav ul {
-        text-align: center;
-    }
-    nav li {
-        display: block;
-        margin: 10px 0;
-    }
-}
