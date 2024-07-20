@@ -2483,6 +2483,22 @@ input, select, textarea {
 		justify-content: center;
 	}
 
+	@media (max-width: 768px) {
+		.content-container {
+			flex-direction: column; /* Dispone l'immagine e la tabella in colonna */
+			align-items: center;
+		}
+	
+		.route-image, .route-container {
+			flex: 0 0 auto; /* Rimuove la dimensione fissa */
+			width: 80%; /* Imposta la larghezza al 80% */
+		}
+	
+		.route-image img {
+			width: 100%; /* L'immagine occupa tutta la larghezza del contenitore */
+		}
+	}
+
 	.route-container h2 {
 		text-align: center;
 		margin-bottom: 20px;
