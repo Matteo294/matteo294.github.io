@@ -2420,6 +2420,7 @@ input, select, textarea {
 		height: auto; /* Altezza automatica per mantenere l'aspetto proporzionale */
 		display: block;
 		margin: 0 auto; /* Margine automatico per centrare l'immagine */
+		z-index: 1;
 	}
 	
 
@@ -2431,6 +2432,7 @@ input, select, textarea {
 		font-size: 40px;
 		font-weight: bold;
 		transition: 0.3s;
+		z-index: 2;
 	}
 
 	.close:hover,
@@ -2442,16 +2444,16 @@ input, select, textarea {
 
 	#caption {
 		color: #fff;
-    text-align: center;
-    padding: 10px;
-    font-size: 1.2em;
-    margin-bottom: 100px;
-    background-color: rgba(0, 0, 0, 0.7); /* Sfondo scuro e semi-trasparente per contrasto */
-    z-index: 1; /* Assicurati che il testo sia sopra l'immagine */
-    position: absolute; /* Posizionamento assoluto per tenere il testo sotto l'immagine */
-    bottom: 20px; /* Distanza dal fondo del modale */
-    left: 50%;
-    transform: translateX(-50%); /* Centra orizzontalmente */
+		text-align: center;
+		padding: 10px;
+		font-size: 1.2em;
+		margin-top: 10px;
+		/* background-color: rgba(0, 0, 0, 0.7); Sfondo scuro e semi-trasparente per contrasto */
+		position: absolute;
+		bottom: 20px; /* Distanza dal fondo del modale */
+		left: 50%;
+		transform: translateX(-50%); /* Centra orizzontalmente */
+		z-index: 2; /* Assicurati che il testo sia sopra l'immagine */
 	}
 
 
