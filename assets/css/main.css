@@ -2486,17 +2486,17 @@ input, select, textarea {
 	@media (max-width: 768px) {
 		.content-container {
 			flex-direction: column; /* Dispone l'immagine e la tabella in colonna */
-			align-items: center;
+        	align-items: center;
 		}
 	
 		.route-image, .route-container {
-			flex: 0 0 auto; /* Rimuove la dimensione fissa */
 			width: 80%; /* Imposta la larghezza al 80% */
+			margin-bottom: 20px; /* Spazio tra gli elementi */
 		}
 	
 		.route-image img {
 			width: 100%; /* L'immagine occupa tutta la larghezza del contenitore */
-		}
+    	}
 	}
 
 	.route-container h2 {
