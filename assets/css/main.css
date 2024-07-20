@@ -2441,14 +2441,17 @@ input, select, textarea {
 	}
 
 	#caption {
-		margin: auto;
-		display: block;
-		width: 80%;
-		max-width: 700px;
-		text-align: center;
-		color: #ccc;
-		padding: 10px 0;
-		height: 150px;
+		color: #fff;
+    text-align: center;
+    padding: 10px;
+    font-size: 1.2em;
+    margin-bottom: 100px;
+    background-color: rgba(0, 0, 0, 0.7); /* Sfondo scuro e semi-trasparente per contrasto */
+    z-index: 1; /* Assicurati che il testo sia sopra l'immagine */
+    position: absolute; /* Posizionamento assoluto per tenere il testo sotto l'immagine */
+    bottom: 20px; /* Distanza dal fondo del modale */
+    left: 50%;
+    transform: translateX(-50%); /* Centra orizzontalmente */
 	}
 
 
@@ -2483,7 +2486,7 @@ input, select, textarea {
 		justify-content: center;
 	}
 
-	@media (max-width: 1080px) {
+	@media (max-width: 736px) {
 		.content-container {
 			flex-direction: column; /* Dispone l'immagine e la tabella in colonna */
         	align-items: center;
