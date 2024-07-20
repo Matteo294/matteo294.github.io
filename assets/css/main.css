@@ -2483,7 +2483,7 @@ input, select, textarea {
 		justify-content: center;
 	}
 
-	@media (max-width: 768px) {
+	@media (max-width: 1080px) {
 		.content-container {
 			flex-direction: column; /* Dispone l'immagine e la tabella in colonna */
         	align-items: center;
